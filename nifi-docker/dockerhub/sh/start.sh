@@ -55,7 +55,7 @@ case ${AUTH} in
         # Reference ldap-provider in properties
         prop_replace 'nifi.security.user.login.identity.provider' 'ldap-provider'
 
-        . "${scripts_dir}/secure.sh"
+        #. "${scripts_dir}/secure.sh"
         . "${scripts_dir}/update_login_providers.sh"
         ;;
     *)
